@@ -1,0 +1,28 @@
+import pandas as pd
+
+if not config:
+    configfile: "../config/config.yaml"
+
+
+
+######## Load rules ########
+include: "rules/aligners.smk"
+include: "rules/assemblers.smk"
+include: "rules/annotation.smk"
+include: "rules/gtf_processing.smk"
+
+
+
+### Get construction dictionnary from config file
+samples_dic = config["samples"]
+constructions_dic = {}
+for sample, dic in samples_dic.items():
+    constructions_dic.setdefault(dic, []).append(sample)
+
+
+
+######## Target rule ########
+rule all:
+    input:
+        expand(f"{config['dirs']['outdir']}/alignment/{{sample}}.minimap2.bam.bai", sample=list(config["samples"].keys())),
+        f"{config['dirs']['outdir']}/MAGIC_SOSTAR_annotation_table_results.xlsx"

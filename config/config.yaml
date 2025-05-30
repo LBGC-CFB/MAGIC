@@ -1,0 +1,36 @@
+# directories
+dirs:
+  constructiondir: /mnt/data/auccam/minigenes_pCAS2/pCAS2_constructions
+  indir: /mnt/hsf/Séquençage_mini-midigènes/Midigènes_mMID/FASTQ
+  outdir: /mnt/hsf/Séquençage_mini-midigènes/Midigènes_mMID/mMID_alignment_splice_dryrun
+
+# samples
+samples:
+    MID05: pCAS2_BRCA1_Ex2-8
+    MID06: pCAS2_BRCA1_Ex2-8-ATGKO
+    MID07: pCAS2_BRCA1_Ex8-12
+    MID08: pCAS2_BRCA1_Ex12-17
+    MID09: pCAS2_BRCA1_Ex17-23
+    MID10: pCAS2_BRCA2_Ex2-9
+    MID11: pCAS2_BRCA2_Ex2-9-ATGKO
+    MID12: pCAS2_BRCA2_Ex9-13
+    MID13: pCAS2_BRCA2_Ex14-20
+    MID14: pCAS2_BRCA2_Ex19-27
+    MID15: pCAS2_PALB2_Ex1-3
+    MID16: pCAS2_PALB2_Ex1-3-ATGKO
+    MID17: pCAS2_PALB2_Ex4-6
+    MID18: pCAS2_PALB2_Ex5-12
+    MID19: pCAS2_RAD51C_Ex2-8
+    MID20: pCAS2_RAD51D_Ex2-9
+    MID21: pCAS2_TP53_Ex2-10-SNPNEG
+    MID22: pCAS2_TP53_Ex2-10-SNPNEG-ATGKO
+    MID23: pCAS2_TP53_Ex2-10-SNPPOS
+    MID24: pCAS2_TP53_Ex2-10-SNPPOS-ATGKO
+
+# threads
+threads: 35
+
+# options
+options:
+  shortread: false
+  longread: true
