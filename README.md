@@ -1,4 +1,4 @@
-# **MAGIC** - *Minigene Assembly and Generation of Isoform Combinations Pipeline*
+# **MAGIC** - **M**inigene **A**ssembly and **G**eneration of **I**soform **C**ombinations toolkit
 
 ![Snakemake](https://img.shields.io/badge/Language-Snakemake-steelblue)
 ![Python3](https://img.shields.io/badge/Language-Python3-steelblue)
