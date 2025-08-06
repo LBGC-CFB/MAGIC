@@ -2,7 +2,7 @@
 dirs:
   constructiondir: ../tests
   indir: ../tests/fastq
-  outdir: /mnt/hsf/MAGIC_demo_test
+  outdir: ../tests/pCAS2_RAD51D_Ex2-9
 
 # samples
 samples:

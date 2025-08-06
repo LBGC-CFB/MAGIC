@@ -1,0 +1,20 @@
+#MAGIC creation of artficial genome gtf file for pCAS2_RAD51D_Ex2-9 construction used for minigene splicing assays and massively parallel sequencing
+pCAS2_RAD51D_Ex2-9	MAGIC	transcript	1	5307	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9";
+pCAS2_RAD51D_Ex2-9	MAGIC	UTR	1	67	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	835	896	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "2";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	835	896	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "2";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	1388	1506	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "3";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	1388	1506	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "3";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	1904	1985	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "4";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	1904	1985	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "4";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	2229	2363	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "5";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	2229	2363	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "5";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	2870	2965	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "6";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	2870	2965	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "6";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	3321	3411	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "7";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	3321	3411	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "7";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	3541	3611	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "8";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	3541	3611	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "8";
+pCAS2_RAD51D_Ex2-9	MAGIC	CDS	3984	4148	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "9";
+pCAS2_RAD51D_Ex2-9	MAGIC	exon	3984	4148	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9"; exon_number "9";
+pCAS2_RAD51D_Ex2-9	MAGIC	UTR	5140	5307	.	+	.	gene_name "RAD51D"; transcript_id "NM_002878_pCAS2_RAD51D_Ex2-9";
