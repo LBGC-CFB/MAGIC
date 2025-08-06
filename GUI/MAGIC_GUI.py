@@ -241,7 +241,7 @@ class MAGIC_GUI(tk.Tk):
         self.ask_btn_seq_ex_5p3p.grid(row=7, column=4, ipadx=1, ipady=1, sticky="e")
 
         # widget4, 5 & 6: ask gene, transcript and construction name
-        self.ask_gene = Label(self.scrollable_frame, text=' Enter: Gene name', justify="left", font=self.ask_font)
+        self.ask_gene = Label(self.scrollable_frame, text=' Enter: Gene symbol', justify="left", font=self.ask_font)
         self.ask_gene.grid(row=8, column=0, padx=5, pady=10, sticky="w")
         self.entry_gene = Entry(self.scrollable_frame, font=self.answer_font)
         self.entry_gene.grid(row=8, column=1, padx=5, pady=10, ipadx=3, ipady=3)
@@ -334,7 +334,7 @@ class MAGIC_GUI(tk.Tk):
         tr = self.entry_tr.get().strip()
         const = self.entry_const.get().strip()
         if not gene or not tr or not const:
-            messagebox.showwarning("Warning", "Please enter gene name, transcript name, and construction name.")
+            messagebox.showwarning("Warning", "Please enter gene symbol, transcript name, and construction name.")
             return
         self.gene_name.set(gene)
         self.transcript_name.set(tr)
@@ -433,7 +433,7 @@ class generate_files():
         self.exs_list = magic.exs_list
         self.success = True
 
-        self.values = {"output directory": self.outdir, "input file": self.seq, "constitutive exon vector 5 prime sequence": self.UTR5p, "constitutive exon vector 3 prime sequence": self.UTR3p, "gene name": self.gene_name, "transcript name": self.transcript_name, "construction name": self.construction_name, "exon number and sequence": self.exs_list}
+        self.values = {"output directory": self.outdir, "input file": self.seq, "constitutive exon vector 5 prime sequence": self.UTR5p, "constitutive exon vector 3 prime sequence": self.UTR3p, "gene symbol": self.gene_name, "transcript name": self.transcript_name, "construction name": self.construction_name, "exon number and sequence": self.exs_list}
         self.values_not_completed = [val_name for val_name, value in self.values.items() if not value]
 
         # generate files if all fields are completed
