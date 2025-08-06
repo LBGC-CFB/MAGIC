@@ -1,19 +1,18 @@
 rule gtf_to_bed:
   input:
-     f"{config['dirs']['constructiondir']}/{{construction}}/{{construction}}.gtf",
+     gtf = os.path.join(config['dirs']['constructiondir'], "{construction}", "{construction}.gtf")
   output:
-     f"{config['dirs']['constructiondir']}/{{construction}}/{{construction}}.bed",
+     bed = os.path.join(config['dirs']['constructiondir'], "{construction}", "{construction}.bed")
   run:
     chr = None
-    with open(input[0], "r") as filin:
-      with open(output[0], "w") as filout:
+    with open(input.gtf, "r") as filin:
+      with open(output.bed, "w") as filout:
         filout.write("# MAGIC: conversion of the gtf construction file into a bed file\n")
         for line in filin:
           if not line.startswith("#"):
-            line = line.split()
+            line = line.strip().split()
             #print(line)
             if line[2] == "transcript":
-              print(line)
               if chr:
                 filout.write(f"{chr}\t{startt}\t{endt}\t{id}\t723\t{strand}\t{startt}\t{endt}\t255,0,0\t{str(exon_count)}\t{str(','.join(exon_length))}\t{str(','.join(exon_start))}\n")
               exon_count = 0
@@ -28,12 +27,12 @@ rule gtf_to_bed:
 
 rule concat_gtf:
   input:
-     lambda wildcards: expand(f"{config['dirs']['constructiondir']}/{{construction}}/{{construction}}.gtf", construction=list(constructions_dic.keys())),
+     gtf_all = lambda wildcards: expand(os.path.join(config['dirs']['constructiondir'], "{construction}", "{construction}.gtf"), construction=list(constructions_dic.keys()))
   output:
-     f"{config['dirs']['outdir']}/constructions_all.gtf"
+     gtf_merged = os.path.join(config['dirs']['outdir'], "constructions_all.gtf")
   run:
-    with open(output[0], "w") as filout:
-      for file in input:
+    with open(output.gtf_merged, "w") as filout:
+      for file in input.gtf_all:
         with open(file, "r") as filin:
           content = filin.read()
           if not content.endswith("\n"):

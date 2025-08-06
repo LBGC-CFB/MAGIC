@@ -142,7 +142,7 @@ def annotate_isoforms(indir, ref_file, outdir):
     dico_bed_UTR = {}
     with open(ref_file, "r") as gtfile:
         for line in gtfile:
-            lines = line.split()
+            lines = line.strip().split()
             construction = lines[0]
             if lines[2] == "transcript":
                 dico_bed.setdefault(construction, [])
@@ -168,7 +168,7 @@ def annotate_isoforms(indir, ref_file, outdir):
         gene = None; list_exon_found = None; exon_count = None
         with open(gtf, "r") as filin:
             for line in filin:
-                lines = line.split()
+                lines = line.strip().split()
                 #initialise transcript and get gene information
                 if lines[2] == "transcript":
                     if gene:

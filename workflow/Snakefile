@@ -24,5 +24,5 @@ for sample, dic in samples_dic.items():
 ######## Target rule ########
 rule all:
     input:
-        expand(f"{config['dirs']['outdir']}/alignment/{{sample}}.minimap2.bam.bai", sample=list(config["samples"].keys())),
-        f"{config['dirs']['outdir']}/MAGIC_SOSTAR_annotation_table_results.xlsx"
+        expand(os.path.join(config['dirs']['outdir'], "alignment", "{sample}.minimap2.bam.bai"), sample=list(samples_dic.keys())),
+        os.path.join(config['dirs']['outdir'], "MAGIC_SOSTAR_annotation_table_results.xlsx")
