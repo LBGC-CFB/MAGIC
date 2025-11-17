@@ -8,6 +8,10 @@ A comprehensive toolkit to unravel RNA isoform structures obtained from minigene
 
 ![MAGIC](./images/MAGIC_workflow.png)
 
+If you use MAGIC in your work, please cite:
+> Aucouturier, Camille et al. “Decipher RNA isoform combinations from minigene splicing assays and massive parallel sequencing with MAGIC.” Bioinformatics (Oxford, England) vol. 41,9 (2025): btaf525.
+> https://doi.org/10.1093/bioinformatics/btaf525
+
 ## Table of Contents
 
 - [Overview](#overview)
